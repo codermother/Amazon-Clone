@@ -37,4 +37,4 @@ app.post("/payments/create", async (request, response) => {
 exports.api = functions.https.onRequest(app);
 
 // Example endpoint
-// http://localhost:5001/challenge-4b2b2/us-central1/api
+// http://localhost:5001/amaznclone-v1/us-central1/api.

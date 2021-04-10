@@ -12,7 +12,14 @@
 }
   
 .checkout-title {
-  margin-right: 10px;
+  margin-right: 20px;
   padding: 10px;
   border-bottom: 1px solid lightgray;
+}
+
+@media only screen and (max-width: 780px) {
+  .checkout {
+  display: flex;
+  flex-direction: column;
+  }
 }

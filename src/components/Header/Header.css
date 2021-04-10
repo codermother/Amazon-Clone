@@ -13,7 +13,7 @@
     object-fit: contain;
     margin: 0 20px;
     margin-top: 18px;
-  }
+}
   
 .header-search {
     display: flex;
@@ -48,7 +48,6 @@
     justify-content: space-evenly;
 }
   
-
 .header-optionLineOne {
     font-size: 10px;
 }
@@ -58,7 +57,6 @@
     font-weight: 800;
 }
   
-
 .header-optionBasket {
     display: flex;
     align-items: center;
@@ -69,5 +67,36 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+
+@media only screen and (max-width: 530px) {
+   .header-logo {
+    padding-left: 0;    
+    width: 70px;
+   }
+
+    .header-optionLineOne {
+    font-size: 9px;
+    }
   
- 
+    .header-optionLineTwo {
+    font-size: 11px;
+    } 
+
+    .header-searchInput {
+        height: 8px;
+    }
+    
+    .header-searchIcon {
+    height: 19px !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .header-optionLineOne {
+        font-size: 9px;
+        }
+      
+    .header-optionLineTwo {
+        font-size: 9px;
+    } 
+}

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./App.css";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Checkout from "./components/Checkout/Checkout";
@@ -10,6 +10,7 @@ import { useStateValue } from "./StateProvider";
 import Payment from "./components/Payment/Payment";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
+import Orders from "./components/Orders/Orders";
 
 const promise = loadStripe(
   "pk_test_51IdVudBDYzH08iN6B3r4f8sFZke2NPuHtA2wRkqsvql1cKJCHuv5X4lQcGdpvCMBfz5JMirO3Q2uRvaF2Md4OL2G00we93HQ5l"
@@ -45,6 +46,10 @@ function App() {
     <Router>
       <div className="app">
         <Switch>
+          <Route path="/orders">
+            <Header />
+            <Orders />
+          </Route>
           <Route path="/login">
             <Login />
           </Route>
