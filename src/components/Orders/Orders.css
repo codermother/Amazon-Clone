@@ -5,3 +5,15 @@
 .orders > h1 {
     margin: 30px 0;
 }
+
+
+@media only screen and (max-width: 550px) {
+    .orders-order {
+        margin: -40px;
+        margin-top: 15px;
+    } 
+
+    .orders > h1 {
+        margin-left: -30px;
+    }
+}

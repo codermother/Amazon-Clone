@@ -30,3 +30,9 @@
     font-size: 17px;
     font-weight: 800;
 }
+
+@media only screen and (max-width: 450px) {
+    .checkoutProduct {
+        display: flex;
+    flex-direction: column;}
+}
